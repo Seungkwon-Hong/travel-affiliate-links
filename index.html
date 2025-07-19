@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,34 +10,35 @@
       background: #f7f9fb;
       color: #222;
       margin: 0;
-      padding: 20px;
+      padding: 10px;
     }
 
     .box {
-      max-width: 400px;
-      margin: auto;
-      background: #fff;
-      border: 2px solid #69a1d4;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+     max-width: 420px;
+     margin: auto;
+     background: #fff;
+     border: 2px solid #69a1d4;
+     border-radius: 12px;
+     padding: 16px 20px 28px 20px; /* 하단 padding 늘림 */
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     }
 
     .box h2 {
-      font-size: 1.2rem;
-      margin-bottom: 12px;
-      color: #124b8d;
-      text-align: center;
+     font-size: 1.2rem;
+     margin: 6px 0 12px 0; /* 기존보다 위쪽 간격 줄임 */
+     color: #124b8d;
+     text-align: center;
     }
 
     .desc {
-      font-size: 0.9rem;
-      margin-bottom: 18px;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
       color: #444;
+      text-align: center;
     }
 
     .section {
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
 
     .section label {
@@ -58,34 +58,41 @@
     }
 
     .iframe-wrap {
-      margin-top: 10px;
+      margin-top: 6px;
       background: #f0f0f0;
       border: 1px solid #ddd;
       padding: 6px;
-      margin-left: 1.5em; /* 위젯 2글자 정도 물림 */
+      margin-left: 1.5em;
     }
 
     .align-flight {
-      padding-left: 3.8em;
-    }
-
-    .align-hotels {
-      padding-left: 5.3em;
-    }
-
-    .sub-links {
-      padding-left: 5.3em; /* Agoda 앞과 맞춤 */
+      padding-left: 1.5em;
       margin-top: 4px;
     }
 
+    .align-hotels {
+      padding-left: 1.5em;
+    }
+
+    .sub-links {
+      padding-left: 2.3em;
+      margin-top: 2px;
+    }
+
     .note {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: #555;
       line-height: 1.4;
     }
 
     .note b {
       color: #333;
+    }
+
+    .footer-note {
+      margin-top: 8px;
+      font-size: 0.8rem;
+      color: #777;
     }
   </style>
 </head>
@@ -99,8 +106,8 @@
 
     <div class="section">
       <label>◯ 상품 구입: <a href="https://link.coupang.com/a/cFGlAo" target="_blank">쿠팡</a></label>
-      <ul>
-        <li>상품 직접 조회</li>
+      <ul style="margin: 2px 0 6px 0.8em;">
+        <li style="font-size: 0.9rem;">상품 직접 조회</li>
       </ul>
       <div class="iframe-wrap">
         <iframe src="https://coupa.ng/ci5mos" width="100%" height="75" frameborder="0" scrolling="no" referrerpolicy="unsafe-url" browsingtopics></iframe>
@@ -124,9 +131,10 @@
       - <b>Agoda</b>: 숙소, 항공+숙소, 교통편<br>
       - <b>Klook</b>: 액티비티/투어/관람권, 교통편
     </div>
-    <div style="margin-top: 10px; font-size: 0.85rem; color: #777;">
-    ※ 위 링크는 <b>제휴 링크</b>로 구입/예매 시 소정의 수수료가 제공되며, <b>구입/예약가에는 영향이 없습니다</b><br>.
+
+    <div class="footer-note">
+      ※ 위 링크는 <b>제휴 링크</b>로 구입/예매 시 소정의 수수료가 제공되며, <b>구입/예약가에는 영향이 없습니다</b>
+    </div>
   </div>
 </body>
-
 </html>
